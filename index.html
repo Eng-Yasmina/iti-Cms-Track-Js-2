@@ -1,0 +1,23 @@
+s<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmine-ITI-CMS</title>
+</head>
+<body>
+    <script>
+    let response2 = prompt(`Please enter today's temperature`, '');
+    function tempreture(temp) {
+        let x = parseInt(temp);
+        let result = x>=30;
+        let state = result ? "Hot":"Cold"; 
+        document.write(`<h1 style="text-align:center; color: Red;">Today's Temp is ${state} :)</h1>`);
+        return(state);
+    }
+    tempreture(response2);
+    </script>
+</body>
+</html>
+
