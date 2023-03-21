@@ -1,4 +1,4 @@
-s<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,15 +8,27 @@ s<!DOCTYPE html>
 </head>
 <body>
     <script>
+    /**
+     * Defines Global Variable
+     */
     let response2 = prompt(`Please enter today's temperature`, '');
-    function tempreture(temp) {
-        let x = parseInt(temp);
-        let result = x>=30;
-        let state = result ? "Hot":"Cold"; 
-        document.write(`<h1 style="text-align:center; color: Red;">Today's Temp is ${state} :)</h1>`);
+    /**
+     * End Global Variable
+     * Begins Main Function
+     */
+    /**
+     * @description prints “HOT” if the entered temperature is >= 30 and “Cold” if it’s < 30.
+     */
+    function weather(temp) {
+        let result = parseInt(temp)>=30;
+        let state = result ? "Hot":"Cold";  //ternary condition
+        document.write(`<h1 style="text-align:center; color: #bf1f21;">Today's weather is ${state} :) <br> Have a nice day !</h1>`);
         return(state);
     }
-    tempreture(response2);
+    weather(response2);
+    /**
+     * End Main Function
+     */
     </script>
 </body>
 </html>
